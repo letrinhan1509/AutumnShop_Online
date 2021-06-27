@@ -1,0 +1,63 @@
+.sidebar{
+    width: 160px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    .btn_toggle{
+        position: relative;
+        span{
+            width:30px;
+            height:3px;
+            background: #000;
+            display: inline-flex;
+            position: absolute;
+            left: 65px;
+            top: 65px;
+        }
+        &::after,&::before{
+            content: "";
+            width:30px;
+            height:3px;
+            background: #000;
+           
+        }
+        &::after{
+            position: absolute;
+            left: 65px;
+            top: 55px;
+        }
+        &::before{
+            position: absolute;
+            left: 65px;
+            top: 75px;
+        }
+    }
+    .dot_page{
+        position: relative;
+        ul{
+            position: absolute;
+            left: 75px;
+            bottom: 40px;
+            li{
+                width: 7px;
+                height: 7px;
+                background: #fff;
+                border: 1px solid #000;
+                border-radius: 50%;
+                margin-top: 20px;
+
+            }
+        }
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        background: #4f9098;
+        display: block;
+        right: 0;
+    }
+}

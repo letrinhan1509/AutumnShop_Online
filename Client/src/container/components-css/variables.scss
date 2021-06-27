@@ -1,0 +1,23 @@
+//color
+$price-color:#40BFFF;
+$name-color:#223263;
+$sale-color:#FB7181;
+$price:#9098B1;
+$color-active: #33A0FF;
+//time
+$t: 0.3s;
+
+@font-face {
+    font-family: "FS Core Magic Rough";
+    src: url("./fonts/FSCoreMagicRough.woff2") format("woff2"), url("./fonts/FSCoreMagicRough.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Love Monday';
+    src: url('./fonts/LoveMonday.woff2') format('woff2'),
+        url('./fonts/LoveMonday.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

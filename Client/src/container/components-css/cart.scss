@@ -1,0 +1,148 @@
+@import "variables.scss";
+.content-wrapper{
+    .cart-wrapper{
+        
+        
+        width: 100%;
+        h1{
+            font-family: "FS Core Magic Rough";
+            text-align: center;
+            font-size: 3em;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin: 40px 150px 0 150px;
+            filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.4));
+            border-radius: 10%;
+        }
+        .Count_Cart{
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 100px;
+            font-size: 1.2em;
+            &::before {
+                position: absolute;
+                content: "";
+                height: 4px;
+                width: 80px;
+                background-color: #000;
+                top: 48%;
+                left: 720px;
+                border-radius: 10px;
+                transform: translateY(-50%);
+            }
+        }
+        .cart-empty{
+            margin: 60px 0;
+            text-align: center;
+            font-weight: 700;
+            font-size: 30px;
+        }
+        .cart-title{
+            display: flex;
+            justify-content: space-evenly;
+            width: 92%;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 30px;    
+        }
+        .cart-product{
+            border-bottom: 1px dashed #333;
+            width: 78%;
+            margin-bottom: 20px;
+            margin-left: 10%;
+            .cart-imgProduct{
+                padding: 20px;
+                img{
+                    border-radius: 15px;
+                    box-shadow: 0px 3px 10px rgba(0,0,0,0.6);
+                    width: 100px;
+                }
+            }
+            .cart-deProduct, .cart-price, .pay-box{
+                //margin-right: 10px;
+                padding-top: 20px;
+                p{
+                    
+                    font-size: 20px;
+                    margin-bottom: 5px;
+                    
+                }  
+            }
+
+            .quantity-price{
+                width: 20%;
+                padding-top: 20px;
+                .quantity-box{
+                    font-size: 20px;
+                    
+                    display: flex;
+                    button{
+                        margin: 0 10px;
+                        outline: none;
+                        border-radius: 50%;
+                        color: #333;
+                        font-weight: 700;
+                        width: 35px;
+                        
+                        background: rgb(255, 255, 255);
+                        transition: 0.5s;
+                        &:hover{
+                            transform: translateY(-5px);
+                            box-shadow: 0px 3px 10px rgba(0,0,0,0.8);
+                            transition: 0.5s;
+                        }
+                    }
+                }
+            }
+            .price-box{
+                padding-top: 20px;
+                font-size: 20px;
+                width: 10%;
+                display: flex;
+            }
+            .btn-box{
+                top: 20px;
+                margin-left: 100px;
+            }
+        }
+        .cart-sum{
+            display: flex;
+            justify-content: space-around;
+            font-size: 20px;
+            text-transform: uppercase;
+            margin: 50px 0;
+            textarea{
+                width: 550px;
+                height: 120px;
+                border: none;
+                outline: none;
+                background: rgb(226, 226, 226);
+                box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
+                &::placeholder{
+                    font-size: 17px;
+                    padding: 15px;
+                }
+            }
+            h3{
+                padding-top: 20px;
+            }
+            
+        }
+        .warning{
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 120px;
+            margin-bottom: 10px;
+            color: red;
+        }
+        .button-group{
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 30px;
+            margin-right: 100px;
+            .ant-col{
+                margin-right: 20px;
+            }
+        }
+    }
+}

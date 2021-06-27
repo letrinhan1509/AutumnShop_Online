@@ -1,0 +1,92 @@
+.ant-layout {
+    width: 100%;
+
+    .menu1-wrapper {
+        position: fixed;
+        z-index: 99;
+        width: 100%;
+        height: 50px;
+        .menu1-box {
+            width: 100%;
+
+            .menu1 {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: flex-end;
+                color: #fff;
+                background: #111;
+                box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1);
+
+                .ant-menu-item {
+                    margin-right: 40px;
+                    color: #fff;
+                    border-bottom: none;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    .box-cart {
+                        color: white;
+                        &:hover {
+                            color: #b76e22;
+                        }
+                    }
+                    .ant-dropdown-link {
+                        color: #fff;
+                        &:hover {
+                            color: #b76e22;
+                        }
+                    }
+                    &:hover {
+                        color: #b76e22;
+                    }
+                }
+                .logo-box {
+                    width: 50%;
+                    .logo {
+                        width: 210px;
+                        display: flex;
+                        flex-direction: row;
+
+                        p {
+                            margin: 0px;
+                            font-size: 20px;
+                            font-family: "FS Core Magic Rough";
+                            letter-spacing: 2px;
+                            color: #b76e22;
+                            transition: 0.5s ease;
+                        }
+                        img {
+                            width: 70px;
+                        }
+                        &:hover {
+                            p {
+                                transition: 0.5s ease;
+                                letter-spacing: 5px;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .menu2-wrapper {
+        margin-top: 70px;
+        position: relative;
+        width: 100%;
+        margin-bottom: 5px;
+        .menu2-box {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            .menu2 {
+                display: flex;
+                justify-content: space-evenly;
+                width: 90%;
+                
+            }
+        }
+    }
+}
